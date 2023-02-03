@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutterwidgets/pages/appbarwidgetpage.dart';
 import 'package:flutterwidgets/pages/centerwidgetpage.dart';
+import 'package:flutterwidgets/pages/columnpage.dart';
 import 'package:flutterwidgets/pages/containerwidgetpage.dart';
+import 'package:flutterwidgets/pages/datatablepage.dart';
+import 'package:flutterwidgets/pages/dividerpage.dart';
 import 'package:flutterwidgets/pages/elevatedbuttonpage.dart';
 import 'package:flutterwidgets/pages/iconbuttonpage.dart';
+import 'package:flutterwidgets/pages/iconpage.dart';
 import 'package:flutterwidgets/pages/imagepage.dart';
 import 'package:flutterwidgets/pages/listviewpage.dart';
 import 'package:flutterwidgets/pages/nopagefoundpage.dart';
 import 'package:flutterwidgets/pages/outlinedbuttonpage.dart';
+import 'package:flutterwidgets/pages/rowpage.dart';
 import 'package:flutterwidgets/pages/textwidgetpage.dart';
 
 import 'pages/selectabletextpage.dart';
@@ -51,10 +56,11 @@ const allWidgets = [
   Book(title: 'Drawer Widget', pageName: NoPageFoundPage()),
   Book(title: 'PopupMenuButton Widget', pageName: NoPageFoundPage()),
   Book(title: 'Image Widget', pageName: ImagePage()),
+  Book(title: 'Icon Widget', pageName: IconPage()),
   Book(title: 'Image Filter Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Column Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Row Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Divider Widget', pageName: NoPageFoundPage()),
+  Book(title: 'Column Widget', pageName: ColumnPage()),
+  Book(title: 'Row Widget', pageName: RowPage()),
+  Book(title: 'Divider Widget', pageName: DividerPage()),
   Book(title: 'SizedBox Widget', pageName: NoPageFoundPage()),
   Book(title: 'Spacer Widget', pageName: NoPageFoundPage()),
   Book(title: 'Padding Widget', pageName: NoPageFoundPage()),
@@ -65,7 +71,6 @@ const allWidgets = [
   Book(title: 'Card Widget', pageName: NoPageFoundPage()),
   Book(title: 'MediaQuery Widget', pageName: NoPageFoundPage()),
   Book(title: 'Custom Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Icon Widget', pageName: NoPageFoundPage()),
   Book(title: 'FlutterLogo Widget', pageName: NoPageFoundPage()),
   Book(title: 'ElevatedButton Widget', pageName: ElevatedButtonPage()),
   Book(title: 'OutlinedButton Widget', pageName: OutlinedButtonPage()),
@@ -98,7 +103,7 @@ const allWidgets = [
   Book(title: 'DateRangePicker Widget', pageName: NoPageFoundPage()),
   Book(title: 'FutureBuilder Widget', pageName: NoPageFoundPage()),
   Book(title: 'Table Widget', pageName: NoPageFoundPage()),
-  Book(title: 'DataTable Widget', pageName: NoPageFoundPage()),
+  Book(title: 'DataTable Widget', pageName: DataTablePage()),
   Book(title: 'SearchBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'GestureDetector Widget', pageName: NoPageFoundPage()),
   Book(title: 'No Page Found', pageName: NoPageFoundPage()),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterwidgets/pages/styling/filepath.dart';
 import 'package:flutterwidgets/pages/styling/subheading.dart';
 
 class IconButtonPage extends StatelessWidget {
@@ -15,10 +16,7 @@ class IconButtonPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              'File : lib/pages/iconbuttonpage.dart',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-            ),
+            filepath(fullpath: 'lib/pages/iconbuttonpage.dart'),
             subheading(heading: 'Example 1 : Icon Button'),
             IconButton(
               color: Colors.purple,

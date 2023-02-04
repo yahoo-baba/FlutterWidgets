@@ -16,7 +16,7 @@ class ListViewHorizontalPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            filepath(fullpath: 'lib/pages/listviewhorizontalpage.dart'),
+            filepath(fullpath: 'lib/pages/inner-pages/listview/listviewhorizontalpage.dart'),
             subheading(heading: 'Example 1 : '),
             Container(
               margin: const EdgeInsets.symmetric(vertical: 20.0),

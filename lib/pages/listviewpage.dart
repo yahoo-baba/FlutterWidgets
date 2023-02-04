@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwidgets/pages/inner-pages/listviewbuilderlisttilepage.dart';
-import 'package:flutterwidgets/pages/inner-pages/listviewbuilderpage.dart';
-import 'package:flutterwidgets/pages/inner-pages/listviewhorizontalpage.dart';
-import 'package:flutterwidgets/pages/inner-pages/listviewlisttilepage.dart';
-import 'package:flutterwidgets/pages/inner-pages/listviewsimplepage.dart';
+import 'package:flutterwidgets/pages/inner-pages/listview/listviewbuilderlisttilepage.dart';
+import 'package:flutterwidgets/pages/inner-pages/listview/listviewbuilderpage.dart';
+import 'package:flutterwidgets/pages/inner-pages/listview/listviewhorizontalpage.dart';
+import 'package:flutterwidgets/pages/inner-pages/listview/listviewlisttilepage.dart';
+import 'package:flutterwidgets/pages/inner-pages/listview/listviewsimplepage.dart';
+import 'package:flutterwidgets/pages/styling/filepath.dart';
+import 'package:flutterwidgets/pages/styling/innerbutton.dart';
 
 class ListViewPage extends StatelessWidget {
   const ListViewPage({super.key});
@@ -16,105 +18,17 @@ class ListViewPage extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(15),
-        child: SingleChildScrollView(
+        child: const SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              // filepath(fullpath: 'lib/pages/listviewpage.dart'),
+              filepath(fullpath: 'lib/pages/inner-pages/listview'),
               SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>
-                          const ListViewSimplePage(),
-                    ),
-                  );
-                },
-                child: Text('Simple ListView', style: TextStyle(fontSize: 18)),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                  shape: StadiumBorder(),
-                  minimumSize: const Size.fromHeight(40),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>
-                          const ListViewListtilePage(),
-                    ),
-                  );
-                },
-                child: Text('ListView with List Tile',
-                    style: TextStyle(fontSize: 18)),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue[800],
-                  shape: StadiumBorder(),
-                  minimumSize: const Size.fromHeight(40),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>
-                          const ListViewBuilderListtilePage(),
-                    ),
-                  );
-                },
-                child: Text('ListView Builder with List Tile',
-                    style: TextStyle(fontSize: 18)),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                  shape: StadiumBorder(),
-                  minimumSize: const Size.fromHeight(40),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>
-                          const ListViewBuilderPage(),
-                    ),
-                  );
-                },
-                child: Text('ListView Builder with Container',
-                    style: TextStyle(fontSize: 18)),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue[800],
-                  shape: StadiumBorder(),
-                  minimumSize: const Size.fromHeight(40),
-                ),
-              ),
-              SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute<void>(
-                      builder: (BuildContext context) =>
-                          const ListViewHorizontalPage(),
-                    ),
-                  );
-                },
-                child:
-                    Text('Horizontal ListView', style: TextStyle(fontSize: 18)),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                  shape: StadiumBorder(),
-                  minimumSize: const Size.fromHeight(40),
-                ),
-              ),
+              innerbutton(title :'Simple ListView',pageName :ListViewSimplePage()),
+              innerbutton(title :'ListView with List Tile',pageName :ListViewListtilePage(), darkShade: true),
+              innerbutton(title :'ListView Builder with List Tile',pageName :ListViewBuilderListtilePage()),
+              innerbutton(title :'ListView Builder with Container',pageName :ListViewBuilderPage(), darkShade: true),
+              innerbutton(title :'Horizontal ListView',pageName :ListViewHorizontalPage()),
             ],
           ),
         ),

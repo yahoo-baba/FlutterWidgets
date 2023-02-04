@@ -17,7 +17,8 @@ class _filepathState extends State<filepath> {
       padding: EdgeInsets.all(8),
       width: double.infinity,
       decoration: BoxDecoration(
-                color: Colors.amber[200],
+                // color: Colors.amber[200],
+                color: Color(0xFF6ae792),
               ),
       child: Text(
           'File : ${widget.fullpath}',

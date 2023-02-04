@@ -16,6 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // theme: ThemeData(
+      //   // colorSchemeSeed: Colors.blue,
+      //   primarySwatch: Colors.blue,
+      //   useMaterial3: true,
+      // ),
       home: const MyHomePage(title: 'Flutter Widgets'),
     );
   }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterwidgets/expansiontilepage.dart';
 import 'package:flutterwidgets/pages/appbarwidgetpage.dart';
 import 'package:flutterwidgets/pages/centerwidgetpage.dart';
+import 'package:flutterwidgets/pages/clippathpage.dart';
 import 'package:flutterwidgets/pages/columnpage.dart';
 import 'package:flutterwidgets/pages/containerwidgetpage.dart';
 import 'package:flutterwidgets/pages/datatablepage.dart';
@@ -14,6 +16,7 @@ import 'package:flutterwidgets/pages/nopagefoundpage.dart';
 import 'package:flutterwidgets/pages/outlinedbuttonpage.dart';
 import 'package:flutterwidgets/pages/rowpage.dart';
 import 'package:flutterwidgets/pages/sliverappbarpage.dart';
+import 'package:flutterwidgets/pages/tablepage.dart';
 import 'package:flutterwidgets/pages/textwidgetpage.dart';
 
 import 'pages/selectabletextpage.dart';
@@ -48,6 +51,7 @@ class Book {
 }
 
 const allWidgets = [
+  Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
@@ -84,8 +88,8 @@ const allWidgets = [
   Book(title: 'Wrap Widget', pageName: NoPageFoundPage()),
   Book(title: 'Listview Widget', pageName: ListViewPage()),
   Book(title: 'Grid Widget', pageName: NoPageFoundPage()),
-  Book(title: 'ExpansionTile Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Clip Widget', pageName: NoPageFoundPage()),
+  // Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
+  Book(title: 'ClipPath Widget', pageName: ClipPathPage()),
   Book(title: 'TabBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'ButtonBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'Hero Widget', pageName: NoPageFoundPage()),
@@ -103,7 +107,7 @@ const allWidgets = [
   Book(title: 'DatePicker Widget', pageName: NoPageFoundPage()),
   Book(title: 'DateRangePicker Widget', pageName: NoPageFoundPage()),
   Book(title: 'FutureBuilder Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Table Widget', pageName: NoPageFoundPage()),
+  Book(title: 'Table Widget', pageName: TablePage()),
   Book(title: 'DataTable Widget', pageName: DataTablePage()),
   Book(title: 'SearchBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'GestureDetector Widget', pageName: NoPageFoundPage()),

@@ -23,3 +23,5 @@ A collection of Flutter Widgets with examples and code.
 - Divider Widget
 - Table Widget
 - DataTable Widget
+- ExpansionTile Widget
+- ClipPath Widget

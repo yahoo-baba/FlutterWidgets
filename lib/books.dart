@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterwidgets/expansiontilepage.dart';
+import 'package:flutterwidgets/pages/alignpage.dart';
 import 'package:flutterwidgets/pages/appbarwidgetpage.dart';
 import 'package:flutterwidgets/pages/centerwidgetpage.dart';
 import 'package:flutterwidgets/pages/clippathpage.dart';
@@ -8,12 +9,14 @@ import 'package:flutterwidgets/pages/containerwidgetpage.dart';
 import 'package:flutterwidgets/pages/datatablepage.dart';
 import 'package:flutterwidgets/pages/dividerpage.dart';
 import 'package:flutterwidgets/pages/elevatedbuttonpage.dart';
+import 'package:flutterwidgets/pages/expandedpage.dart';
 import 'package:flutterwidgets/pages/iconbuttonpage.dart';
 import 'package:flutterwidgets/pages/iconpage.dart';
 import 'package:flutterwidgets/pages/imagepage.dart';
 import 'package:flutterwidgets/pages/listviewpage.dart';
 import 'package:flutterwidgets/pages/nopagefoundpage.dart';
 import 'package:flutterwidgets/pages/outlinedbuttonpage.dart';
+import 'package:flutterwidgets/pages/placeholderpage.dart';
 import 'package:flutterwidgets/pages/rowpage.dart';
 import 'package:flutterwidgets/pages/sliverappbarpage.dart';
 import 'package:flutterwidgets/pages/tablepage.dart';
@@ -51,17 +54,17 @@ class Book {
 }
 
 const allWidgets = [
-  Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
   Book(title: 'Center Widget', pageName: CenterWidgetPage()),
   Book(title: 'Container Widget', pageName: ContainerWidgetPage()),
-  Book(title: 'Align Widget', pageName: NoPageFoundPage()),
+  Book(title: 'Align Widget', pageName: AlignPage()),
   Book(title: 'Drawer Widget', pageName: NoPageFoundPage()),
   Book(title: 'PopupMenuButton Widget', pageName: NoPageFoundPage()),
   Book(title: 'Image Widget', pageName: ImagePage()),
   Book(title: 'Icon Widget', pageName: IconPage()),
+  Book(title: 'Placeholder Widget', pageName: PlaceholderPage()),
   Book(title: 'Image Filter Widget', pageName: NoPageFoundPage()),
   Book(title: 'Column Widget', pageName: ColumnPage()),
   Book(title: 'Row Widget', pageName: RowPage()),
@@ -69,7 +72,7 @@ const allWidgets = [
   Book(title: 'SizedBox Widget', pageName: NoPageFoundPage()),
   Book(title: 'Spacer Widget', pageName: NoPageFoundPage()),
   Book(title: 'Padding Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Expanded Widget', pageName: NoPageFoundPage()),
+  Book(title: 'Expanded Widget', pageName: ExpandedPage()),
   Book(title: 'SliverAppBar Widget', pageName: SliverAppBarPage()),
   Book(title: 'Flex Widget', pageName: NoPageFoundPage()),
   Book(title: 'SingleChildScrollView Widget', pageName: NoPageFoundPage()),
@@ -88,7 +91,7 @@ const allWidgets = [
   Book(title: 'Wrap Widget', pageName: NoPageFoundPage()),
   Book(title: 'Listview Widget', pageName: ListViewPage()),
   Book(title: 'Grid Widget', pageName: NoPageFoundPage()),
-  // Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
+  Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
   Book(title: 'ClipPath Widget', pageName: ClipPathPage()),
   Book(title: 'TabBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'ButtonBar Widget', pageName: NoPageFoundPage()),

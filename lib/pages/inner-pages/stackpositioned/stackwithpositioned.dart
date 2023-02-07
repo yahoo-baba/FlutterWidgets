@@ -14,7 +14,26 @@ class StackwithPositioned extends StatelessWidget {
       body: Container(
         child: Stack(
           children: [
-            Container(),
+            Positioned(
+                top: 50,
+                left: 50,
+                width: 200,
+                height: 200,
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.amber,
+                      borderRadius: BorderRadius.circular(15)),
+                )),
+            Positioned(
+                top: 75,
+                left: 75,
+                width: 200,
+                height: 200,
+                child: Container(
+                  decoration: BoxDecoration(
+                      color: Colors.pink,
+                      borderRadius: BorderRadius.circular(15)),
+                )),
             Positioned(
                 top: 100,
                 left: 100,

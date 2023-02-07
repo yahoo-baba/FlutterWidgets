@@ -13,6 +13,7 @@ import 'package:flutterwidgets/pages/expandedpage.dart';
 import 'package:flutterwidgets/pages/iconbuttonpage.dart';
 import 'package:flutterwidgets/pages/iconpage.dart';
 import 'package:flutterwidgets/pages/imagepage.dart';
+import 'package:flutterwidgets/pages/inkwellpage.dart';
 import 'package:flutterwidgets/pages/listviewpage.dart';
 import 'package:flutterwidgets/pages/nopagefoundpage.dart';
 import 'package:flutterwidgets/pages/outlinedbuttonpage.dart';
@@ -34,19 +35,6 @@ class Book {
     required this.pageName,
   });
 
-  //This function is used in main.dart file on onTap()
-  //MaterialPageRoute gotoPage(String pagename){
-  // MaterialPageRoute gotoPage(){
-  //   return MaterialPageRoute(builder: (context){
-  //     switch (title) {
-  //       case 'AppBar Widget': return const AppbarWidgetPage();
-  //       case 'Text Widget': return const TextWidgetPage();
-  //       case 'Center Widget': return const CenterWidgetPage();
-  //       default: return const NoPageFoundPage();
-  //     }
-  //   });
-  // }
-
   MaterialPageRoute gotoPage() {
     return MaterialPageRoute(builder: (context) {
       return pageName;
@@ -55,7 +43,7 @@ class Book {
 }
 
 const allWidgets = [
-  Book(title: 'Stack & Positioned Widget', pageName: StackPositionedPage()),
+  Book(title: 'InkWell Widget', pageName: InkWellPage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
@@ -77,8 +65,7 @@ const allWidgets = [
   Book(title: 'Expanded Widget', pageName: ExpandedPage()),
   Book(title: 'SliverAppBar Widget', pageName: SliverAppBarPage()),
   Book(title: 'Flex Widget', pageName: NoPageFoundPage()),
-  // Book(title: 'Stack & Positioned Widget', pageName: StackPositionedPage()),
-  // Book(title: 'Positioned Widget', pageName: NoPageFoundPage()),
+  Book(title: 'Stack & Positioned Widget', pageName: StackPositionedPage()),
   Book(title: 'SingleChildScrollView Widget', pageName: NoPageFoundPage()),
   Book(title: 'FittedBox Widget', pageName: NoPageFoundPage()),
   Book(title: 'Card Widget', pageName: NoPageFoundPage()),
@@ -88,7 +75,7 @@ const allWidgets = [
   Book(title: 'ElevatedButton Widget', pageName: ElevatedButtonPage()),
   Book(title: 'OutlinedButton Widget', pageName: OutlinedButtonPage()),
   Book(title: 'IconButton Widget', pageName: IconButtonPage()),
-  Book(title: 'InkWell Widget', pageName: NoPageFoundPage()),
+  // Book(title: 'InkWell Widget', pageName: InkWellPage()),
   Book(title: 'ToolTip Widget', pageName: NoPageFoundPage()),
   Book(title: 'Wrap Widget', pageName: NoPageFoundPage()),
   Book(title: 'Listview Widget', pageName: ListViewPage()),

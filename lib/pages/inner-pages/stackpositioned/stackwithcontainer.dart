@@ -12,38 +12,40 @@ class StackwithContainer extends StatelessWidget {
         title: const Text('Stack with Container Widget'),
       ),
       body: Container(
+        margin: EdgeInsets.all(20),
         child: Stack(
+          clipBehavior: Clip.none,
+          alignment: Alignment.center,
           children: [
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.deepOrange,
+              
+            ),
+            Container(
+              width: 150,
+              height: 150,
+              color: Colors.amber[200],
+            ),
+            // Container(
+            //   margin: EdgeInsets.only(left: 120),
+            //   width: 100,
+            //   height: 100,
+            //   color: Colors.lime[700],
+            //   child: Text("data"),
+            // )
             Positioned(
-                top: 50,
-                left: 50,
-                width: 200,
-                height: 200,
+                top: 140,
+                left: 140,
+                width: 100,
+                height: 100,
                 child: Container(
                   decoration: BoxDecoration(
-                      color: Colors.amber,
+                      color: Colors.blue[700],
                       borderRadius: BorderRadius.circular(15)),
                 )),
-            Positioned(
-                top: 75,
-                left: 75,
-                width: 200,
-                height: 200,
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.pink,
-                      borderRadius: BorderRadius.circular(15)),
-                )),
-            Positioned(
-                top: 100,
-                left: 100,
-                width: 200,
-                height: 200,
-                child: Container(
-                  decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(15)),
-                ))
+            
           ],
         ),
       ),

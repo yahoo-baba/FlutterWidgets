@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwidgets/pages/inner-pages/expanded/expandedcolumn.dart';
-import 'package:flutterwidgets/pages/inner-pages/expanded/expandedrow.dart';
 import 'package:flutterwidgets/pages/inner-pages/stackpositioned/stackwithcontainer.dart';
 import 'package:flutterwidgets/pages/inner-pages/stackpositioned/stackwithpositioned.dart';
 import 'package:flutterwidgets/pages/styling/filepath.dart';
@@ -20,7 +18,7 @@ class StackPositionedPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const <Widget>[
+            children: <Widget>[
               filepath(fullpath: 'lib/pages/inner-pages/stackpositioned/'),
               SizedBox(height: 20),
               innerbutton(

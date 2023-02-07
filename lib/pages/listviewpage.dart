@@ -18,17 +18,28 @@ class ListViewPage extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(15),
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               filepath(fullpath: 'lib/pages/inner-pages/listview'),
               SizedBox(height: 20),
-              innerbutton(title :'Simple ListView',pageName :ListViewSimplePage()),
-              innerbutton(title :'ListView with List Tile',pageName :ListViewListtilePage(), darkShade: true),
-              innerbutton(title :'ListView Builder with List Tile',pageName :ListViewBuilderListtilePage()),
-              innerbutton(title :'ListView Builder with Container',pageName :ListViewBuilderPage(), darkShade: true),
-              innerbutton(title :'Horizontal ListView',pageName :ListViewHorizontalPage()),
+              innerbutton(
+                  title: 'Simple ListView', pageName: ListViewSimplePage()),
+              innerbutton(
+                  title: 'ListView with List Tile',
+                  pageName: ListViewListtilePage(),
+                  darkShade: true),
+              innerbutton(
+                  title: 'ListView Builder with List Tile',
+                  pageName: ListViewBuilderListtilePage()),
+              innerbutton(
+                  title: 'ListView Builder with Container',
+                  pageName: ListViewBuilderPage(),
+                  darkShade: true),
+              innerbutton(
+                  title: 'Horizontal ListView',
+                  pageName: ListViewHorizontalPage()),
             ],
           ),
         ),

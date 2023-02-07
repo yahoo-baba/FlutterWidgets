@@ -19,6 +19,7 @@ import 'package:flutterwidgets/pages/outlinedbuttonpage.dart';
 import 'package:flutterwidgets/pages/placeholderpage.dart';
 import 'package:flutterwidgets/pages/rowpage.dart';
 import 'package:flutterwidgets/pages/sliverappbarpage.dart';
+import 'package:flutterwidgets/pages/stackpositionedpage.dart';
 import 'package:flutterwidgets/pages/tablepage.dart';
 import 'package:flutterwidgets/pages/textwidgetpage.dart';
 
@@ -54,6 +55,7 @@ class Book {
 }
 
 const allWidgets = [
+  Book(title: 'Stack & Positioned Widget', pageName: StackPositionedPage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
@@ -75,6 +77,8 @@ const allWidgets = [
   Book(title: 'Expanded Widget', pageName: ExpandedPage()),
   Book(title: 'SliverAppBar Widget', pageName: SliverAppBarPage()),
   Book(title: 'Flex Widget', pageName: NoPageFoundPage()),
+  // Book(title: 'Stack & Positioned Widget', pageName: StackPositionedPage()),
+  // Book(title: 'Positioned Widget', pageName: NoPageFoundPage()),
   Book(title: 'SingleChildScrollView Widget', pageName: NoPageFoundPage()),
   Book(title: 'FittedBox Widget', pageName: NoPageFoundPage()),
   Book(title: 'Card Widget', pageName: NoPageFoundPage()),
@@ -86,8 +90,6 @@ const allWidgets = [
   Book(title: 'IconButton Widget', pageName: IconButtonPage()),
   Book(title: 'InkWell Widget', pageName: NoPageFoundPage()),
   Book(title: 'ToolTip Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Stack Widget', pageName: NoPageFoundPage()),
-  Book(title: 'Positioned Widget', pageName: NoPageFoundPage()),
   Book(title: 'Wrap Widget', pageName: NoPageFoundPage()),
   Book(title: 'Listview Widget', pageName: ListViewPage()),
   Book(title: 'Grid Widget', pageName: NoPageFoundPage()),

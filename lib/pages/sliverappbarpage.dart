@@ -15,15 +15,19 @@ class SliverAppBarPage extends StatelessWidget {
       ),
       body: Container(
         padding: const EdgeInsets.all(15),
-        child: const SingleChildScrollView(
+        child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               filepath(fullpath: 'lib/pages/inner-pages/sliverappbar'),
               SizedBox(height: 20),
-              innerbutton(title :'SliverAppBar with ListView',pageName :SliverAppBarListTile(),darkShade :true),
-              innerbutton(title :'SliverAppBar with TabBar',pageName :SliverAppBarTabBar()),
-              
+              innerbutton(
+                  title: 'SliverAppBar with ListView',
+                  pageName: SliverAppBarListTile(),
+                  darkShade: true),
+              innerbutton(
+                  title: 'SliverAppBar with TabBar',
+                  pageName: SliverAppBarTabBar()),
             ],
           ),
         ),

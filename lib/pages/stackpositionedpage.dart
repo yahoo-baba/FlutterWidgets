@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutterwidgets/pages/inner-pages/expanded/expandedcolumn.dart';
 import 'package:flutterwidgets/pages/inner-pages/expanded/expandedrow.dart';
+import 'package:flutterwidgets/pages/inner-pages/stackpositioned/stackwithcontainer.dart';
+import 'package:flutterwidgets/pages/inner-pages/stackpositioned/stackwithpositioned.dart';
 import 'package:flutterwidgets/pages/styling/filepath.dart';
 import 'package:flutterwidgets/pages/styling/innerbutton.dart';
 
-class ExpandedPage extends StatelessWidget {
-  const ExpandedPage({super.key});
+class StackPositionedPage extends StatelessWidget {
+  const StackPositionedPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Expanded Widget'),
+        title: const Text('Stack & Positioned Widget'),
       ),
       body: Container(
         padding: const EdgeInsets.all(15),
@@ -19,13 +21,14 @@ class ExpandedPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const <Widget>[
-              filepath(fullpath: 'lib/pages/inner-pages/expanded/'),
+              filepath(fullpath: 'lib/pages/inner-pages/stackpositioned/'),
               SizedBox(height: 20),
               innerbutton(
-                  title: 'Expanded in Column', pageName: ExpandedColumnPage()),
+                  title: 'Stack with Positioned',
+                  pageName: StackwithPositioned()),
               innerbutton(
-                  title: 'Expanded in Row',
-                  pageName: ExpandedRowPage(),
+                  title: 'Stack with Container',
+                  pageName: StackwithContainer(),
                   darkShade: true),
             ],
           ),

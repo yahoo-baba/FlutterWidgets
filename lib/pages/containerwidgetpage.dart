@@ -27,7 +27,6 @@ class ContainerWidgetPage extends StatelessWidget {
               // padding: const EdgeInsets.fromLTRB(10, 20, 30, 5),
               // padding: const EdgeInsets.only(left: 20),
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-
               decoration: BoxDecoration(
                 color: Colors.amber,
                 border: Border.all(width: 4.0, color: const Color(0xFFFFFFFF)),

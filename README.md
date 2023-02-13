@@ -10,8 +10,11 @@ A collection of Flutter Widgets with examples and code.
 - Row Widget
 - Columns Widget
 - Center Widget
+- Align Widget
 - Text Widget
 - Selectable Text Widget
+- Padding Widget
+- ListTile Widget
 - ListView Widget
 - GridView Widget
 - Table Widget
@@ -20,8 +23,11 @@ A collection of Flutter Widgets with examples and code.
 - Icon Button Widget
 - Elevated Button Widget
 - Outlined Button Widget
+- InkWell Widget
 - Divider Widget
 - Table Widget
 - DataTable Widget
 - ExpansionTile Widget
 - ClipPath Widget
+- PageView
+- Radio Widget

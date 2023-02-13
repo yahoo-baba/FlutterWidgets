@@ -10,14 +10,17 @@ import 'package:flutterwidgets/pages/datatablepage.dart';
 import 'package:flutterwidgets/pages/dividerpage.dart';
 import 'package:flutterwidgets/pages/elevatedbuttonpage.dart';
 import 'package:flutterwidgets/pages/expandedpage.dart';
+import 'package:flutterwidgets/pages/gridviewpage.dart';
 import 'package:flutterwidgets/pages/iconbuttonpage.dart';
 import 'package:flutterwidgets/pages/iconpage.dart';
 import 'package:flutterwidgets/pages/imagepage.dart';
 import 'package:flutterwidgets/pages/inkwellpage.dart';
+import 'package:flutterwidgets/pages/listtilepage.dart';
 import 'package:flutterwidgets/pages/listviewpage.dart';
 import 'package:flutterwidgets/pages/nopagefoundpage.dart';
 import 'package:flutterwidgets/pages/outlinedbuttonpage.dart';
 import 'package:flutterwidgets/pages/paddingpage.dart';
+import 'package:flutterwidgets/pages/pageviewpage.dart';
 import 'package:flutterwidgets/pages/placeholderpage.dart';
 import 'package:flutterwidgets/pages/radiopage.dart';
 import 'package:flutterwidgets/pages/rowpage.dart';
@@ -45,7 +48,7 @@ class Book {
 }
 
 const allWidgets = [
-  // Book(title: 'Padding Widget', pageName: PaddingPage()),
+  Book(title: 'GridView Widget', pageName: GridViewPage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
@@ -80,8 +83,9 @@ const allWidgets = [
   Book(title: 'InkWell Widget', pageName: InkWellPage()),
   Book(title: 'ToolTip Widget', pageName: NoPageFoundPage()),
   Book(title: 'Wrap Widget', pageName: NoPageFoundPage()),
+  Book(title: 'ListTile Widget', pageName: ListTilePage()),
   Book(title: 'Listview Widget', pageName: ListViewPage()),
-  Book(title: 'Grid Widget', pageName: NoPageFoundPage()),
+  // Book(title: 'GridView Widget', pageName: NoPageFoundPage()),
   Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
   Book(title: 'ClipPath Widget', pageName: ClipPathPage()),
   Book(title: 'TabBar Widget', pageName: NoPageFoundPage()),
@@ -104,6 +108,7 @@ const allWidgets = [
   Book(title: 'FutureBuilder Widget', pageName: NoPageFoundPage()),
   Book(title: 'Table Widget', pageName: TablePage()),
   Book(title: 'DataTable Widget', pageName: DataTablePage()),
+  Book(title: 'PageView Widget', pageName: PageViewPage()),
   Book(title: 'SearchBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'GestureDetector Widget', pageName: NoPageFoundPage()),
   Book(title: 'No Page Found', pageName: NoPageFoundPage()),

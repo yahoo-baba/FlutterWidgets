@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterwidgets/pages/inner-pages/gridview/gridviewbuilder.dart';
+import 'package:flutterwidgets/pages/inner-pages/gridview/gridviewcount.dart';
+import 'package:flutterwidgets/pages/inner-pages/gridview/simplegridview.dart';
 import 'package:flutterwidgets/pages/inner-pages/listview/listviewbuilderlisttilepage.dart';
 import 'package:flutterwidgets/pages/inner-pages/listview/listviewbuilderpage.dart';
 import 'package:flutterwidgets/pages/inner-pages/listview/listviewhorizontalpage.dart';
@@ -24,22 +27,13 @@ class GridViewPage extends StatelessWidget {
             children: <Widget>[
               filepath(fullpath: 'lib/pages/inner-pages/gridview'),
               SizedBox(height: 20),
+              innerbutton(title: 'Simple GridView', pageName: SimpleGridView()),
               innerbutton(
-                  title: 'Simple GridView', pageName: ListViewSimplePage()),
-              innerbutton(
-                  title: 'ListView with List Tile',
-                  pageName: ListViewListtilePage(),
+                  title: 'GridView.Count',
+                  pageName: GridViewCount(),
                   darkShade: true),
               innerbutton(
-                  title: 'ListView Builder with List Tile',
-                  pageName: ListViewBuilderListtilePage()),
-              innerbutton(
-                  title: 'ListView Builder with Container',
-                  pageName: ListViewBuilderPage(),
-                  darkShade: true),
-              innerbutton(
-                  title: 'Horizontal ListView',
-                  pageName: ListViewHorizontalPage()),
+                  title: 'GridView Builder', pageName: GridViewBuilder()),
             ],
           ),
         ),

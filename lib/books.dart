@@ -28,6 +28,7 @@ import 'package:flutterwidgets/pages/sliverappbarpage.dart';
 import 'package:flutterwidgets/pages/stackpositionedpage.dart';
 import 'package:flutterwidgets/pages/tabbarpage.dart';
 import 'package:flutterwidgets/pages/tablepage.dart';
+import 'package:flutterwidgets/pages/textfieldpage.dart';
 import 'package:flutterwidgets/pages/textwidgetpage.dart';
 
 import 'pages/selectabletextpage.dart';
@@ -49,7 +50,7 @@ class Book {
 }
 
 const allWidgets = [
-  Book(title: 'TabBar Widget', pageName: TabBarPage()),
+  Book(title: 'Bottom NavigationBar Widget', pageName: TextFieldPage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
@@ -89,7 +90,7 @@ const allWidgets = [
   Book(title: 'GridView Widget', pageName: GridViewPage()),
   Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
   Book(title: 'ClipPath Widget', pageName: ClipPathPage()),
-  // Book(title: 'TabBar Widget', pageName: NoPageFoundPage()),
+  Book(title: 'TabBar Widget', pageName: TabBarPage()),
   Book(title: 'ButtonBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'Hero Widget', pageName: NoPageFoundPage()),
   Book(title: 'Snackbar Widget', pageName: NoPageFoundPage()),
@@ -101,7 +102,7 @@ const allWidgets = [
   Book(title: 'BottomSheet Widget', pageName: NoPageFoundPage()),
   Book(title: 'Sliders & Carousel Widget', pageName: NoPageFoundPage()),
   Book(title: 'Stepper Widget', pageName: NoPageFoundPage()),
-  Book(title: 'All Form Elements Widget', pageName: NoPageFoundPage()),
+  Book(title: 'TextField or TextFormField Widget', pageName: TextFieldPage()),
   Book(title: 'Radio Widget', pageName: RadioPage()),
   Book(title: 'TimePicker Widget', pageName: NoPageFoundPage()),
   Book(title: 'DatePicker Widget', pageName: NoPageFoundPage()),

@@ -7,6 +7,8 @@ class TabBarPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // https://www.flutterbeads.com/a-deep-dive-into-tabbar-in-flutter/
+    // https://www.flutterbeads.com/change-tab-bar-color-in-flutter/
     return DefaultTabController(
       initialIndex: 1,
       length: 3,
@@ -14,6 +16,9 @@ class TabBarPage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('TabBar Widget'),
           bottom: const TabBar(
+            labelColor: Colors.black,  // Icon & Text Color
+            unselectedLabelColor: Colors.white,
+            indicatorColor: Colors.black, // Underline Color
             tabs: <Widget>[
               Tab(
                 icon: Icon(Icons.cloud_outlined),

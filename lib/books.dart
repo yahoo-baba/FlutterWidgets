@@ -26,6 +26,7 @@ import 'package:flutterwidgets/pages/radiopage.dart';
 import 'package:flutterwidgets/pages/rowpage.dart';
 import 'package:flutterwidgets/pages/sliverappbarpage.dart';
 import 'package:flutterwidgets/pages/stackpositionedpage.dart';
+import 'package:flutterwidgets/pages/tabbarpage.dart';
 import 'package:flutterwidgets/pages/tablepage.dart';
 import 'package:flutterwidgets/pages/textwidgetpage.dart';
 
@@ -48,7 +49,7 @@ class Book {
 }
 
 const allWidgets = [
-  Book(title: 'GridView Widget', pageName: GridViewPage()),
+  Book(title: 'TabBar Widget', pageName: TabBarPage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
@@ -85,10 +86,10 @@ const allWidgets = [
   Book(title: 'Wrap Widget', pageName: NoPageFoundPage()),
   Book(title: 'ListTile Widget', pageName: ListTilePage()),
   Book(title: 'Listview Widget', pageName: ListViewPage()),
-  // Book(title: 'GridView Widget', pageName: NoPageFoundPage()),
+  Book(title: 'GridView Widget', pageName: GridViewPage()),
   Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
   Book(title: 'ClipPath Widget', pageName: ClipPathPage()),
-  Book(title: 'TabBar Widget', pageName: NoPageFoundPage()),
+  // Book(title: 'TabBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'ButtonBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'Hero Widget', pageName: NoPageFoundPage()),
   Book(title: 'Snackbar Widget', pageName: NoPageFoundPage()),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterwidgets/expansiontilepage.dart';
 import 'package:flutterwidgets/pages/alignpage.dart';
 import 'package:flutterwidgets/pages/appbarwidgetpage.dart';
+import 'package:flutterwidgets/pages/bottomnavigationbarpage.dart';
 import 'package:flutterwidgets/pages/centerwidgetpage.dart';
 import 'package:flutterwidgets/pages/clippathpage.dart';
 import 'package:flutterwidgets/pages/columnpage.dart';
@@ -50,7 +51,9 @@ class Book {
 }
 
 const allWidgets = [
-  Book(title: 'Bottom NavigationBar Widget', pageName: TextFieldPage()),
+  Book(
+      title: 'Bottom NavigationBar Widget',
+      pageName: BottomNavigationBarPage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),

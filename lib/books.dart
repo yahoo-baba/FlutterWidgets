@@ -51,9 +51,7 @@ class Book {
 }
 
 const allWidgets = [
-  Book(
-      title: 'Bottom NavigationBar Widget',
-      pageName: BottomNavigationBarPage()),
+  Book(title: 'Checkbox Widget', pageName: AppbarWidgetPage()),
   Book(title: 'AppBar Widget', pageName: AppbarWidgetPage()),
   Book(title: 'Text Widget', pageName: TextWidgetPage()),
   Book(title: 'SelectableText Widget', pageName: SelectableTextPage()),
@@ -94,6 +92,9 @@ const allWidgets = [
   Book(title: 'ExpansionTile Widget', pageName: ExpansionTilePage()),
   Book(title: 'ClipPath Widget', pageName: ClipPathPage()),
   Book(title: 'TabBar Widget', pageName: TabBarPage()),
+  Book(
+      title: 'Bottom NavigationBar Widget',
+      pageName: BottomNavigationBarPage()),
   Book(title: 'ButtonBar Widget', pageName: NoPageFoundPage()),
   Book(title: 'Hero Widget', pageName: NoPageFoundPage()),
   Book(title: 'Snackbar Widget', pageName: NoPageFoundPage()),

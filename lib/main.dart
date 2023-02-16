@@ -105,15 +105,4 @@ class _MyHomePageState extends State<MyHomePage> {
 
     setState(() => books = suggestions);
   }
-
-  // MaterialPageRoute gotoPage(String pagename){
-  //   return MaterialPageRoute(builder: (context){
-  //     switch (pagename) {
-  //       case 'AppbarWidgetPage': return const AppbarWidgetPage();
-  //       case 'TextWidgetPage': return const TextWidgetPage();
-  //       case 'CenterWidgetPage': return const CenterWidgetPage();
-  //       default: return const AppbarWidgetPage();
-  //     }
-  //   });
-  // }
 }
